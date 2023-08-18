@@ -133,10 +133,11 @@ namespace Employee_TMS.Controllers
                 return View("EditEmployee", employee);
             }
         }
+
         [HttpPost]
         public IActionResult EditEmployee(Employee editEmployee, IFormFile ProfileImage)
         {
-          
+
             byte[] existingProfileImage = HttpContext.Session.Get("ExistingProfileImage");
 
             if (ProfileImage != null && ProfileImage.Length > 0)
@@ -173,10 +174,7 @@ namespace Employee_TMS.Controllers
                 _employeeServices.EditEmployeewithoutProfile(editEmployee);
                 return RedirectToAction("GetAllEmployee");
             }
-
-            
         }
-
 
         public IActionResult DeleteEmployee(string EmployeeId)
         {
@@ -203,6 +201,7 @@ namespace Employee_TMS.Controllers
             {
                 return RedirectToAction("GetReport", new { EmployeeId = EmployeeId });
             }
+
         }
        
 
