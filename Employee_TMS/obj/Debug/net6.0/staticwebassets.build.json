@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3zZ9/yYcQldGnwWr9btTBk3RY7yyRwMWcJG8qHfpWGs=",
+  "Hash": "Gq1Wm3ylaiS+1s0vi6O7XNwT2km9f0TnC+ki8nv71E0=",
   "Source": "Employee_TMS",
   "BasePath": "_content/Employee_TMS",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Employee_TMS\\wwwroot",
       "Source": "Employee_TMS",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Employee_TMS.styles.css",
+      "Identity": "D:\\Project\\Employee_TMS\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Employee_TMS.styles.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "Employee_TMS.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Handson\\Employee_TMS\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Employee_TMS.styles.css"
+      "OriginalItemSpec": "D:\\Project\\Employee_TMS\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Employee_TMS.styles.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Employee_TMS.bundle.scp.css",
+      "Identity": "D:\\Project\\Employee_TMS\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Employee_TMS.bundle.scp.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "Employee_TMS.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Handson\\Employee_TMS\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Employee_TMS.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Project\\Employee_TMS\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Employee_TMS.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\css\\site.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\favicon.ico",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\abc_logo.png",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\abc_logo.png",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/abc_logo.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\images\\abc_logo.png"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\admin-logo.png",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\admin-logo.png",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/admin-logo.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\admin-logo.png"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\changepassword-logo.png",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\changepassword-logo.png",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/changepassword-logo.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\images\\changepassword-logo.png"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\checkin-logo.png",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\checkin-logo.png",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/checkin-logo.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\images\\checkin-logo.png"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\dashboard-image.avif",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\dashboard-image.avif",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/dashboard-image.avif",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dashboard-image.avif"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\default-profile.jpg",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\default-profile.jpg",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/default-profile.jpg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\images\\default-profile.jpg"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\Department.png",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\Department.png",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/Department.png",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Department.png"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\dept.jpg",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\dept.jpg",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/dept.jpg",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dept.jpg"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\emp-logo.png",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\emp-logo.png",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/emp-logo.png",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\images\\emp-logo.png"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\employee-logo.webp",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\employee-logo.webp",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/employee-logo.webp",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\images\\employee-logo.webp"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\forgotpassword-logo.png",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\forgotpassword-logo.png",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/forgotpassword-logo.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\images\\forgotpassword-logo.png"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\login-logo.png",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\login-logo.png",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/login-logo.png",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\images\\login-logo.png"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\profile-logo.jpg",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\profile-logo.jpg",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/profile-logo.jpg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profile-logo.jpg"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\report-image.png",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\report-image.png",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/report-image.png",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\images\\report-image.png"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\search-logo.webp",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\search-logo.webp",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/search-logo.webp",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\search-logo.webp"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\images\\security-logo.png",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\images\\security-logo.png",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "images/security-logo.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\images\\security-logo.png"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\js\\site.js",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\Handson\\Employee_TMS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\Project\\Employee_TMS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Employee_TMS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Handson\\Employee_TMS\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\Employee_TMS\\wwwroot\\",
       "BasePath": "_content/Employee_TMS",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

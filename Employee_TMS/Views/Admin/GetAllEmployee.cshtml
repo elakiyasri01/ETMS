@@ -40,12 +40,12 @@
         width: 40px;
         height: 40px;
         background-color: white;
-        border-radius: 50%; /* Set the mask to a circular shape */
-        overflow: hidden; /* Hide any overflow outside the circle */
-        position: relative; /* Enable positioning for the child elements */
+        border-radius: 50%; 
+        overflow: hidden; 
+        position: relative; 
     }
 
-    /* Style for the image */
+    
     .circular-image {
         position: absolute;
         top: 50%;
@@ -54,6 +54,7 @@
         max-width: 100%;
         max-height: 100%;
     }
+   
 
 
     .btn-primary {
@@ -75,6 +76,18 @@
             pointer-events: none;
         }
 
+        .ulist {
+  background: #007BFF;
+  padding: 20px;
+   list-style-type: none;
+}
+ .list {
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+ 
+}
+
 </style>
 
 
@@ -83,17 +96,17 @@
         <div class="col-md-3">
             <!-- Sidebar -->
             <div class="sidebar bg-light">
-                <ul class="arrow-list">
-                    <li class="nav-item">
+                <ul class="ulist">
+                    <li class="list">
                         <form method="post" asp-controller="Admin" asp-action="AddEmployee">
                             <button type="submit" class="btn btn-link nav-link"><i class="fas fa-user-plus"></i> Add New Employee</button>
                         </form>
                     </li>
                    
-                    <li class="nav-item">
-                         <form>
+                    <li class="list">
+                     
                         <a href="DownloadExcel" class="btn btn-link nav-link download-excel"><i class="fas fa-file-excel"></i> Download Excel for Employees</a>
-                        </form>
+                      
                     </li>
                    
                 </ul>
@@ -121,7 +134,7 @@
                     </div>
                     <div class="mt-2" style="color:red">@ViewBag.Message</div>
                     <div class="mt-2" style="color:green">@ViewBag.ExcelMessage</div>
-                    <button type="submit" class="btn btn-primary "><i class="fas fa-file-excel mr-2"></i>Upload Excel</button>
+                    <button type="submit" class="btn btn-secondary "><i class="fas fa-file-excel mr-2"></i>Upload Excel</button>
                 </form>
             </div>
            
