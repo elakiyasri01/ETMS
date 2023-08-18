@@ -1,0 +1,184 @@
+﻿@model Employee_TMS.Entities.Employee
+
+@{
+    ViewData["Title"] = "AddEmployee";
+    Layout = null;
+}
+
+<h1>AddEmployee</h1>
+<!-- Add Bootstrap CSS link -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+<style>
+    .employee-form {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+        .employee-form h4 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .employee-form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .employee-form .btn-primary {
+            width: 100%;
+        }
+
+        .employee-form .btn-secondary {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+    .image-container {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%; /* Set the mask to a circular shape */
+        overflow: hidden; /* Hide any overflow outside the circle */
+        position: relative; /* Enable positioning for the child elements */
+    }
+    /* Style for the image */
+    .circular-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%;
+    }
+</style>
+
+<hr />
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="employee-form">
+        <form asp-action="AddEmployee" class="needs-validation" method="post" enctype="multipart/form-data" novalidate>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="EmployeeId" class="control-label" ></label>
+                <input asp-for="EmployeeId" class="form-control" required/>
+                <span asp-validation-for="EmployeeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmployeePassword" class="control-label" ></label>
+                <input asp-for="EmployeePassword" class="form-control" required/>
+                <span asp-validation-for="EmployeePassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FullName" class="control-label"></label>
+                <input asp-for="FullName" class="form-control"required />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Department" class="control-label"></label>
+                <input asp-for="Department" class="form-control" required />
+                <span asp-validation-for="Department" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SecurityQuestion" class="control-label" hidden></label>
+                <input asp-for="SecurityQuestion" class="form-control" readonly hidden/>
+                <span asp-validation-for="SecurityQuestion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SecurityAnswer" class="control-label" hidden></label>
+                <input asp-for="SecurityAnswer" class="form-control" readonly hidden />
+                <span asp-validation-for="SecurityAnswer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Passwordchanged" class="control-label" hidden></label>
+                <input asp-for="Passwordchanged" class="form-control" readonly hidden />
+                <span asp-validation-for="Passwordchanged" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Designation" class="control-label"></label>
+                <input asp-for="Designation" class="form-control" required/>
+                <span asp-validation-for="Designation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" required/>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label form-label"></label>
+                <select asp-for="Gender" class="form-control select2-dropdown" id="Gender">
+                    <option disabled hidden selected>Select a Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female"> Female</option>
+                    <option value="Other"> Other</option>
+
+                </select>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="ReportingTo" class="control-label form-label"></label>
+                <select asp-for="ReportingTo" class="form-control select2-dropdown" id="managerDropdown">
+                    <option disabled hidden selected>Select a Manager</option>
+                    @foreach (var manager in ViewBag.employeeManager)
+                    {
+                        <option value="@manager.FullName">@manager.FullName</option>
+                    }
+                </select>
+                <span asp-validation-for="ReportingTo" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="ProfileImage" class="control-label form-label"></label>
+                <input  type="file" name="ProfileImage" accept=".jpg, .jpeg, .png, .gif" />
+              
+
+            </div>
+            <div class="form-group">
+                <label asp-for="ProfileImageName" class="control-label" hidden></label>
+                <input asp-for="ProfileImageName" class="form-control" readonly hidden/>
+                <span asp-validation-for="ProfileImageName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    </div>
+    </div>
+    <a asp-action="GetAllEmployee">Back to List</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+
+<script>
+    $(document).ready(function () {
+        $("#managerDropdown").select2({
+            theme: 'bootstrap',
+            //placeholder: 'Select a Manager',
+            allowClear: true,
+            width: '100%',
+
+        });
+        $("#Gender").select2({
+            theme: 'bootstrap',
+            //placeholder: 'Select a Gender',
+            allowClear: true,
+            width: '100%',
+
+        });
+    });
+</script>
+

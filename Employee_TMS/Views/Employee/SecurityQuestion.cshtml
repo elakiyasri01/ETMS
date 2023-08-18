@@ -1,0 +1,47 @@
+﻿@model Employee_TMS.Entities.Employee
+
+@{
+    ViewData["Title"] = "SecurityQuestion";
+}
+
+<style>
+    .card {
+        margin: 0 auto;
+        margin-top: 100px;
+        width: 400px;
+        padding: 20px;
+        background-color: #f7f7f7;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .row{
+        margin-left:300px;
+    }
+</style>
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <h3 class="text-center">Security Question</h3>
+            <img src="~/images/security-logo.png" alt="employee Logo" width="100" height="100" />
+           
+            <p>Employee ID: @ViewBag.EmployeeId</p>
+            <p>Security Question: @ViewBag.SecurityQuestion</p>
+
+            @using (Html.BeginForm("SecurityQuestion", "Employee", FormMethod.Post))
+            {
+                <div class="form-group">
+                    <label for="securityAnswer">Security Answer:</label>
+                    <input type="text" id="securityAnswer" name="securityAnswer" class="form-control" />
+                </div>
+
+                <input type="hidden" name="employeeId" value="@ViewBag.EmployeeId" />
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <h1>@ViewBag.ErrorMessage</h1>
+            }
+        </div>
+    </div>
+</div>

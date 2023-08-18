@@ -1,0 +1,43 @@
+﻿@model List<List<Employee_TMS.Entities.Employee>>
+
+@{
+    ViewData["Title"] = "GetAllEmployeeDepartment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<div class="container mt-4">
+    <h1>Department</h1>
+    <div class="row">
+        @foreach (var departmentEmployees in Model)
+        {
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Department: @departmentEmployees.FirstOrDefault()?.Department
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        @foreach (var employee in departmentEmployees)
+                        {
+                            <li class="list-group-item">
+                            <li> EmployeeId: @employee.EmployeeId</li>
+                            <li>  Name: @employee.FullName</li>
+                            <li> Designation:@employee.Designation</li>
+                            <li>  Email:@employee.Email</li>
+                            <li>  Gender:@employee.Gender</li>
+                            <li>ReportingTo:@employee.ReportingTo</li>
+                           
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<div>
+    <a asp-action="EmployeeDashboard">Back to List</a>
+</div>

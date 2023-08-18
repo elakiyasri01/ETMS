@@ -1,0 +1,59 @@
+﻿l
+@model Employee_TMS.Entities.Employee
+
+@{
+    ViewData["Title"] = "EmployeeDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Employee Details</h1>
+<style>
+   
+    .container
+    {
+        padding-top: 20px;
+    }
+
+  
+    .btn-primary
+    {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+    .btn-primary:hover 
+    {
+            background-color: #0056b3;
+            border-color: #0056b3;
+    }
+
+</style>
+
+<div class="container">
+    <dl class="row">
+        <dt class="col-sm-2">Employee ID</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.EmployeeId)</dd>
+
+        <dt class="col-sm-2">Full Name</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.FullName)</dd>
+
+        <dt class="col-sm-2">Department</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Department)</dd>
+
+        <dt class="col-sm-2">Gender</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Gender)</dd>
+
+        <dt class="col-sm-2">Email</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Email)</dd>
+
+        <dt class="col-sm-2">Designation</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Designation)</dd>
+
+        <dt class="col-sm-2">ReportingTo</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.ReportingTo)</dd>
+    </dl>
+</div>
+
+<div class="container mt-4">
+    <a asp-action="EmployeeDashboard" class="btn btn-primary">Back to List</a>
+</div>

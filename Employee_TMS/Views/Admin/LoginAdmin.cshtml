@@ -1,0 +1,68 @@
+﻿@model Employee_TMS.Entities.Admin
+
+@{
+    ViewData["Title"] = "LoginAdmin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="text-center mb-4">
+        <img src="~/images/admin-logo.png" alt="Admin Logo" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Admin Login</h1>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="LoginAdmin" class="login-form">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="AdminId" class="control-label">Admin ID</label>
+                    <input asp-for="AdminId" class="form-control" required />
+                    <span asp-validation-for="AdminId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AdminPassword" class="control-label">Password</label>
+                    <input asp-for="AdminPassword" type="password" class="form-control" required />
+                    <span asp-validation-for="AdminPassword" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .login-form {
+        background-color: #f8f8f8;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 50px;
+    }
+
+        .login-form label {
+            font-weight: bold;
+        }
+
+        .login-form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .login-form .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+            .login-form .btn-primary:hover {
+                background-color: #0069d9;
+                border-color: #0062cc;
+            }
+
+        .login-form h1 {
+            color: #313;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+</style>

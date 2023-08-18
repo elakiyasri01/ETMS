@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Employee_TMS.Entities.Employee>
+
+@{
+    ViewData["Title"] = "SearchEmployee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h4 class="mb-3 font-weight-light">Search Employee</h4>
+<form asp-controller="Employee" asp-action="EmployeeDetails" method="get">
+    <div class="form-group">
+        <input type="text" name="EmployeeId" class="form-control" style="background-color: #CDE0F3;" placeholder="Search..." required>
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+    <h4 style="color:red">@ViewBag.SearchMessage</h4>
+</form>
+
+<div class="card mt-4">
+    <div class="card-header">
+        <h1 class="card-title mt-2">Employee Informations</h1>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.EmployeeId)</th>
+                    <th>@Html.DisplayNameFor(model => model.FullName)</th>
+                    <th>@Html.DisplayNameFor(model => model.Department)</th>
+                    <th>@Html.DisplayNameFor(model => model.Designation)</th>
+                    <th>@Html.DisplayNameFor(model => model.Email)</th>
+                    <th>@Html.DisplayNameFor(model => model.Gender)</th>
+                    <th>@Html.DisplayNameFor(model => model.ReportingTo)</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.EmployeeId)</td>
+                        <td>@Html.DisplayFor(modelItem => item.FullName)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Department)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Designation)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Gender)</td>
+                        <td>@Html.DisplayFor(modelItem => item.ReportingTo)</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<a asp-action="EmployeeDashboard">Back to List</a>

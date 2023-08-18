@@ -1,0 +1,197 @@
+﻿
+
+@model IEnumerable<Employee_TMS.Entities.Employee>
+
+@{
+    ViewData["Title"] = "GetAllEmployee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+L2W9l7Sg5U9t4l4nRmO6dtBqIvqIOW59P6PrsU2nA+2CwF" crossorigin="anonymous" style="font-display: swap;">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <img src="~/images/abc_logo.png" alt="Profile Logo" width="72" height="72" />
+        <a class="navbar-brand" href="#">Admin Panel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <form method="post" action="/Admin/Logout">
+                        <button class="btn btn-link nav-link"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<style>
+  
+    nav-link.download-excel {
+
+        margin-left:-10px;
+    }
+        .image-container {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%; /* Set the mask to a circular shape */
+        overflow: hidden; /* Hide any overflow outside the circle */
+        position: relative; /* Enable positioning for the child elements */
+    }
+
+    /* Style for the image */
+    .circular-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+
+    .btn-primary {
+        position: relative;
+    }
+
+        .btn-primary:hover:after {
+            content: "Search";
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #000;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            opacity: 0.8;
+            pointer-events: none;
+        }
+
+</style>
+
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-3">
+            <!-- Sidebar -->
+            <div class="sidebar bg-light">
+                <ul class="arrow-list">
+                    <li class="nav-item">
+                        <form method="post" asp-controller="Admin" asp-action="AddEmployee">
+                            <button type="submit" class="btn btn-link nav-link"><i class="fas fa-user-plus"></i> Add New Employee</button>
+                        </form>
+                    </li>
+                   
+                    <li class="nav-item">
+                         <form>
+                        <a href="DownloadExcel" class="btn btn-link nav-link download-excel"><i class="fas fa-file-excel"></i> Download Excel for Employees</a>
+                        </form>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <!-- Search Form -->
+            <h4 class="mb-3 font-weight-light">Search Employee</h4>
+            <form asp-controller="Admin" asp-action="SearchEmployee" method="get">
+                <div class="input-group">
+                    <input type="text" name="EmployeeId" class="form-control" style="background-color: #CDE0F3;" placeholder="Search..." required>
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary" id="search-icon">
+                            <i class="fas fa-search"></i> 
+                        </button>
+                    </div>
+                </div>
+                <h4 class="mt-2" style="color:red">@ViewBag.SearchMessage</h4>
+            </form>
+            <div class="mt-4">
+                <form method="post" asp-controller="Excel" asp-action="Excel" enctype="multipart/form-data">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" name="file" required />
+                        <label class="custom-file-label" for="customFile">*(Choose Excel File)</label>
+                    </div>
+                    <div class="mt-2" style="color:red">@ViewBag.Message</div>
+                    <div class="mt-2" style="color:green">@ViewBag.ExcelMessage</div>
+                    <button type="submit" class="btn btn-primary "><i class="fas fa-file-excel mr-2"></i>Upload Excel</button>
+                </form>
+            </div>
+           
+        </div>
+    </div>
+
+    <!-- Rest of content... -->
+</div>
+
+<div class="card mt-4">
+    <div class="card-header bg-primary text-white">
+        <h1 class="card-title mt-2">Employee Information</h1>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>  </th>
+                        <th>@Html.DisplayNameFor(model => model.EmployeeId)</th>
+                        <th>@Html.DisplayNameFor(model => model.FullName)</th>
+                        <th>@Html.DisplayNameFor(model => model.Department)</th>
+                        <th>@Html.DisplayNameFor(model => model.Gender)</th>
+                        <th>@Html.DisplayNameFor(model => model.Designation)</th>
+                        <th>@Html.DisplayNameFor(model => model.Email)</th>
+                        <th>@Html.DisplayNameFor(model => model.ReportingTo)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <div class="image-container">
+                                    @if (item.ProfileImage == null)
+                                    {
+                                        <img src="~/images/default-profile.jpg" alt="Default Profile Image" class="circular-image" width="72" height="72" />
+                                    }
+                                    else
+                                    {
+                                        string base64Image = Convert.ToBase64String(item.ProfileImage);
+                                        string imgSrc = $"data:image/png;base64,{base64Image}";
+                                        <img src="@imgSrc" class="circular-image" alt="Image" width="72" height="72" />
+                                    }
+                                </div>
+                            </td>
+                            <td>@Html.DisplayFor(modelItem => item.EmployeeId)</td>
+                            <td>@Html.DisplayFor(modelItem => item.FullName)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Department)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Gender)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Designation)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                            <td>@Html.DisplayFor(modelItem => item.ReportingTo)</td>
+
+                            <td>
+                                <a href="GetReport?EmployeeId=@item.EmployeeId">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
+                                        <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z" />
+                                        <path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z" />
+                                    </svg>
+                                </a>
+                                <a href="EditEmployee?EmployeeId=@item.EmployeeId"><i class="fa fa-pencil"></i></a>
+                                <a href="DeleteEmployee?EmployeeId=@item.EmployeeId"><i class="fa fa-trash"></i></a>
+
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

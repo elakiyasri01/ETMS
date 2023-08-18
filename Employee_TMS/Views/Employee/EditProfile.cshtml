@@ -1,0 +1,133 @@
+﻿
+
+
+@model Employee_TMS.Entities.Employee
+
+@{
+    ViewData["Title"] = "EditProfile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .popup-form {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 400px;
+        margin: 0 auto;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+<h1>Edit Profile</h1>
+
+<div class="popup-form">
+    <h4>Employee</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-12">
+            <form asp-action="EditProfile" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="EmployeeId" class="control-label"></label>
+                    <input asp-for="EmployeeId" class="form-control" />
+                    <span asp-validation-for="EmployeeId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="EmployeePassword" class="control-label form-label" hidden></label>
+                    <input asp-for="EmployeePassword" class="form-control" readonly hidden />
+                    <span asp-validation-for="EmployeePassword" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FullName" class="control-label"></label>
+                    <input asp-for="FullName" class="form-control" />
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Department" class="control-label"></label>
+                    <input asp-for="Department" class="form-control" />
+                    <span asp-validation-for="Department" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SecurityQuestion" class="control-label"></label>
+                    <input asp-for="SecurityQuestion" class="form-control" />
+                    <span asp-validation-for="SecurityQuestion" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SecurityAnswer" class="control-label"></label>
+                    <input asp-for="SecurityAnswer" class="form-control" />
+                    <span asp-validation-for="SecurityAnswer" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Passwordchanged" class="control-label" hidden></label>
+                    <input asp-for="Passwordchanged" class="form-control" readonly hidden />
+                    <span asp-validation-for="Passwordchanged" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Designation" class="control-label form-label"></label>
+                    <input asp-for="Designation" class="form-control" />
+                    <span asp-validation-for="Designation" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label form-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Gender" class="control-label form-label"></label>
+                    <input asp-for="Gender" class="form-control"  />
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ReportingTo" class="control-label form-label" hidden></label>
+                    <input asp-for="ReportingTo" class="form-control"  readonly hidden/>
+                    <span asp-validation-for="ReportingTo" class="text-danger" hidden></span>
+                </div>
+              
+
+                @if (Model.ProfileImage ==null && Model.ProfileImageName == null)
+                {
+
+                     <div class="image-container">
+                            <img src="~/images/default-profile.jpg" alt="Default Profile Image" class="circular-image" width="72" height="72" />
+                        </div>
+                            <h4>Update the Profile image</h4>
+
+                            <label asp-for="ProfileImage" class="control-label form-label"></label>
+                            <input asp-for="ProfileImage" type="file" name="ProfileImage" accept=".jpg, .jpeg, .png, .gif" />
+
+                            <span asp-validation-for="ProfileImage" class="text-danger"></span>
+
+                }
+
+                else
+                {
+
+                    <div class="image-container">
+                        @{
+                            string base64Image = Convert.ToBase64String(Model.ProfileImage);
+                            string imgSrc = $"data:image/png;base64,{base64Image}";
+                            <img src="@imgSrc" class="circular-image" alt="Image" width="72" height="72" />
+                        }
+                    </div>
+                    <h4>Change the Profile image</h4>
+
+                    <label asp-for="ProfileImage" class="control-label form-label"></label>
+                    <input asp-for="ProfileImage" type="file" name="ProfileImage" accept=".jpg, .jpeg, .png, .gif" />
+
+                    <span asp-validation-for="ProfileImage" class="text-danger"></span>
+
+                }
+               
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-action="EmployeeDashboard">Back to List</a>
+</div>

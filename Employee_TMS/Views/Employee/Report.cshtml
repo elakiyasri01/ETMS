@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Employee_TMS.Entities.Report>
+
+@{
+    ViewData["Title"] = "Report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 style="text-align:center">Time Sheet</h1>
+                @foreach (var reportEntry in Model)
+    
+    {
+        <div class="card mt-4">
+            <div class="card-body">
+                <h3 class="card-title"><strong> @reportEntry.CheckIn?.ToString("yyyy-MM-dd")</strong></h3>
+                <p><strong>Check-in:</strong> @reportEntry.CheckIn?.ToString("HH:mm:ss")</p>
+                <p><strong>Check-out:</strong> @reportEntry.CheckOut?.ToString("HH:mm:ss")</p>
+                <p><strong>Worked Hours:</strong> @reportEntry.WorkedHours?.ToString("hh\\:mm\\:ss")</p>
+            </div>
+        </div>
+    }
+
+    
+<div>
+    <a asp-action="EmployeeDashboard">Back to List</a>
+</div>

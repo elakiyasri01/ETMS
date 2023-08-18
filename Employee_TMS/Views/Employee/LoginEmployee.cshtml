@@ -1,0 +1,101 @@
+﻿
+@model EmployeeLogin;
+
+@{
+    ViewData["Title"] = "LoginEmployee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using Employee_TMS.Entities;
+@using Microsoft.Extensions.Configuration;
+@using Microsoft.Extensions.Options;
+
+@inject IOptions<GoogleCaptchaConfig> GoogleCaptchaConfig 
+
+<div class="container">
+    <h3></h3>
+    <h1 class="text-center">ABC Company Login</h1>
+    
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="LoginEmployee" class="login-form">
+             <input type="hidden" id="Login" asp-for="Token" />
+                <div class="d-flex justify-content-center">
+                    <img src="~/images/abc_logo.png" alt="employee Logo" width="150" height="150" />
+                </div>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="EmployeeId" class="control-label">Employee ID</label>
+                    <input asp-for="EmployeeId" class="form-control" required/>
+                    <span asp-validation-for="EmployeeId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="EmployeePassword" class="control-label">Password</label>
+                    <input asp-for="EmployeePassword" class="form-control" required/>
+                    <span asp-validation-for="EmployeePassword" class="text-danger"></span>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-center mt-3">
+        <img src="~/images/forgotpassword-logo.png" alt="employee Logo" width="72" height="72" />
+        <a asp-action="Id_ForgotPassword">Forgot Password?</a>
+    </div>
+</div>
+
+<style>
+    .login-form {
+        background-color: #f8f8f8;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 50px;
+    }
+
+        .login-form label {
+            font-weight: bold;
+        }
+
+        .login-form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .login-form .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+            .login-form .btn-primary:hover {
+                background-color: #0069d9;
+                border-color: #0062cc;
+            }
+
+        .login-form a {
+            color: #007bff;
+            text-decoration: none;
+        }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://www.google.com/recaptcha/api.js?render=@GoogleCaptchaConfig.Value.SiteKey"></script>
+<script>
+    function getToken(){
+        grecaptcha.ready(function () {
+            grecaptcha.execute('@GoogleCaptchaConfig.Value.SiteKey', { action: 'submit' }).then(function (token) {
+                console.log(token)
+                
+                $("#Login").val(token);
+            });
+        });
+    }
+    setInterval(getToken(),115000 )
+    $(function() {
+     getToken()
+    });
+</script>

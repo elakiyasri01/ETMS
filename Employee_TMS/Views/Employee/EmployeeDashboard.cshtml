@@ -1,0 +1,234 @@
+﻿@model IEnumerable<Employee_TMS.Entities.Report>
+
+@{
+    ViewData["Title"] = "EmployeeDashboard";
+    Layout = null;
+}
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    .container {
+        margin-right: 0px;
+    }
+
+    .check-in-card {
+        background-color: #99e48a;
+        color: white;
+        align-self:center;
+        justify-content: center;
+        width:1100px;
+    }
+
+    .check-out-card {
+        background-color: #f0b4b4;
+        color: white;
+        justify-content: center;
+        width: 1100px;
+    }
+
+    .card {
+        min-height: 300px;
+    }
+
+    .jumbotron {
+        padding: 2rem 1rem;
+    }
+
+    .card-deck {
+        margin-bottom: 2rem;
+    }
+
+    .mb-4 {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        
+    }
+
+    .card img {
+        max-width: 100px;
+        max-height: 100px;
+        margin-bottom: 1rem;
+    }
+</style>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="~/images/abc_logo.png" alt="Profile Logo" width="72" height="72" />
+        <a class="navbar-brand" href="#">Employee Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <form class="form-inline" method="post" action="/Employee/Logout">
+                        <button class="btn btn-link nav-link"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+  <div class="container mt-4">
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to Employee Dashboard</h1>
+        <p class="lead">Hello, @ViewBag.EmployeeId! Here's your dashboard with all the information you need.</p>
+    </div>
+      @{
+        var NullCheckIn = Model.Any(model => model.EmployeeId == ViewBag.EmployeeId);
+        var passwordchanged = ViewBag.PasswordChanged;
+          
+        if (NullCheckIn == false & passwordchanged == null)
+        {
+            <h5 style="color:red">
+                @Html.ActionLink("Set your security question and answer before the password change", "EditProfile", "Employee", new {EmployeeId = ViewBag.EmployeeId }, null)
+            </h5>
+
+            <br /><br />
+            <p>Click here to change password</p>
+            <a href="/Employee/checkPassword">
+
+                <img src="~/images/changepassword-logo.png" alt="Profile Logo" width="170" height="100" />
+            </a>
+        }
+
+        else
+        {
+            if (Model != null && Model.Any())
+            {
+                var todayEntry = Model.FirstOrDefault(entry => entry.CheckIn != null && entry.CheckOut == null);
+                bool availableCheckIn = todayEntry == null;
+                bool availableCheckOut = todayEntry != null;
+                <div class="row">
+                    <div class="col-sm-12 mb-4">
+                        <div class="card bg-info text-white check-in-card">
+                            
+                            <div class="card-body" style="justify-content:center">
+                                @if (availableCheckIn)
+                                {
+                                    <div class="check-in-card">
+                                        <div class="card-body">
+                                            <form method="post" action="/Employee/CheckIn">
+                                                <input type="hidden" name="employeeId" value="@ViewBag.EmployeeId" />
+                                                <img src="~/images/checkin-logo.png" alt="Check-in Logo" class="img-fluid rounded-circle mb-3" style="max-width: 200px; max-height: 200px;" />
+
+                                                <button class="btn btn-primary" type="submit">Check-in</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                }
+                                else if (availableCheckOut)
+                                {
+                                    <div class="check-out-card">
+                                        <div class="card-body">
+                                            <form method="post" action="/Employee/CheckOut">
+                                                <input type="hidden" name="employeeId" value="@ViewBag.EmployeeId" />
+                                                <img src="~/images/checkin-logo.png" alt="Check-out Logo" class="img-fluid rounded-circle mb-3" style="max-width: 200px; max-height: 200px;" />
+                                                <button class="btn btn-danger" type="submit">Check-out</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <p>No action available at the moment.</p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+                    <div class="row">
+                    <div class="col-sm-3 mb-4">
+                        <div class="card bg-info text-white">
+                            <div class="card-body">
+                                <h4 class="card-title">Profile</h4>
+                                <a href="/Employee/Profile">
+                                    <img src="~/images/profile-logo.jpg" alt="Profile Logo" class="img-fluid rounded-circle mb-3" style="max-width: 100px; max-height: 100px;" />
+                                </a>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 mb-4">
+                        <div class="card bg-info text-white">
+                            <div class="card-body">
+                                <h4 class="card-title">Employees</h4>
+                                <a href="/Employee/SearchEmployee">
+                                    <img src="~/images/search-logo.webp" alt="Search Logo" class="img-fluid rounded-circle mb-3" style="max-width: 100px; height: 100px;" />
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                
+                    <div class="col-sm-3 mb-4">
+                        <div class="card bg-info text-white">
+                            <div class="card-body">
+                                <h4 class="card-title">Report</h4>
+                                <a href="/Employee/Report">
+                                    <img src="~/images/report-image.png" alt="Report Logo" class="img-fluid rounded-circle mb-3" style="max-width: 100px; max-height: 100px;" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 mb-4">
+                        <div class="card bg-info text-white">
+                            <div class="card-body">
+                                <h4 class="card-title">Department</h4>
+                                <a href="/Employee/GetAllEmployeeDepartment">
+                                    <img src="~/images/dept.jpg" alt="Department Logo" class="img-fluid rounded-circle mb-3" style="max-width: 100px; max-height: 100px;" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+                
+            }
+            else
+            {
+                <div class="card bg-info text-white check-in-card">
+                  <div class="check-in-card">
+               <div class="card mt-4">
+                    <div class="card-body">
+                        <p>No attendance records found.</p>
+                        <img src="~/images/checkin-logo.png" alt="Check-in Logo" class="img-fluid rounded-circle mb-3" style="max-width: 200px; max-height: 200px;" />
+                        <form method="post" action="/Employee/CheckIn">
+                            <input type="hidden" name="employeeId" value="@ViewBag.EmployeeId" />
+                            <div class="d-flex justify-content-center">
+                                <button class="btn btn-primary" type="submit">Check-in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+                </div>
+               
+            }
+        }
+        
+}  </div>
+
+<footer class="footer bg-dark text-white mt-4">
+    <div class="container text-center">
+        <span class="text-muted">&copy; 2023 Your Company. All rights reserved.</span>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
