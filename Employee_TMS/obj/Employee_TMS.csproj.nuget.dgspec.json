@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Handson\\Employee_TMS\\Employee_TMS.csproj": {}
+    "D:\\Project\\Employee_TMS\\Employee_TMS.csproj": {}
   },
   "projects": {
-    "D:\\Handson\\Employee_TMS\\Employee_TMS.csproj": {
+    "D:\\Project\\Employee_TMS\\Employee_TMS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Handson\\Employee_TMS\\Employee_TMS.csproj",
+        "projectUniqueName": "D:\\Project\\Employee_TMS\\Employee_TMS.csproj",
         "projectName": "Employee_TMS",
-        "projectPath": "D:\\Handson\\Employee_TMS\\Employee_TMS.csproj",
+        "projectPath": "D:\\Project\\Employee_TMS\\Employee_TMS.csproj",
         "packagesPath": "C:\\Users\\elakiya.ganesh\\.nuget\\packages\\",
-        "outputPath": "D:\\Handson\\Employee_TMS\\obj\\",
+        "outputPath": "D:\\Project\\Employee_TMS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\elakiya.ganesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
